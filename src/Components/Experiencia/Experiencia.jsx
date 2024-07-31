@@ -40,8 +40,8 @@ const Experiencia = () => {
                 { "name": "Flutter", percentage: 89 },
             ],
             "links": [
-                { "url": "https://saimonglobal.com", text: "influencethis.ca", icon: enlaceexterno },
-                { "url": "https://maps.google.com/?q=Dhaka+Bangladesh", text: "Remote (Toronto, Canada)", icon: ubicacion },
+                { "url": "https://saimonglobal.com", text: "saimonglobal.com", icon: enlaceexterno },
+                { "url": "https://maps.google.com/?q=Remote+(Toronto,+Canada)", text: "Remote (Toronto, Canada)", icon: ubicacion },
             ],
         },
         {
@@ -57,8 +57,8 @@ const Experiencia = () => {
                 { "name": "Flutter", percentage: 89 },
             ],
             "links": [
-                { "url": "https://saimonglobal.com", text: "upwork.com", icon: enlaceexterno },
-                { "url": "https://maps.google.com/?q=Dhaka+Bangladesh", text: "Remote", icon: ubicacion },
+                { "url": "https://upwork.com", text: "upwork.com", icon: enlaceexterno },
+                { "url": "https://maps.google.com/?q=Remote", text: "Remote", icon: ubicacion },
             ],
         },
     ];

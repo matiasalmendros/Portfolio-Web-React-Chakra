@@ -13,11 +13,11 @@ const Hero = () => {
     <Box as="section" id="inicio" p="10% 2% 2% 0" display="flex" justifyContent="space-between" bgImage={`url(${fondoImg})`} bgPos="center" bgSize="cover" bgRepeat="no-repeat">
       <Flex direction="column-reverse" alignItems="center" p="0 4%" gap="3%">
         <Flex direction="column-reverse" h="26.5%" w="35%" alignItems="center">
-          <Link href="#"><Image src={facebookIcon} boxSize="1.55em" /></Link>
-          <Link href="#"><Image src={instagramIcon} boxSize="1.55em" /></Link>
-          <Link href="#"><Image src={twitterIcon} boxSize="1.55em" /></Link>
-          <Link href="#"><Image src={linkedinIcon} boxSize="1.55em" /></Link>
-          <Link href="#"><Image src={editarIcon} boxSize="1.55em" /></Link>
+          <Link href="https://www.facebook.com/zuck"><Image src={facebookIcon} boxSize="1.55em" /></Link>
+          <Link href="https://www.instagram.com/zuck"><Image src={instagramIcon} boxSize="1.55em" /></Link>
+          <Link href="https://twitter.com/elonmusk"><Image src={twitterIcon} boxSize="1.55em" /></Link>
+          <Link href="https://www.linkedin.com/in/reidhoffman"><Image src={linkedinIcon} boxSize="1.55em" /></Link>
+          <Link href="mailto:mirot88763@geekjun.com"><Image src={editarIcon} boxSize="1.55em" /></Link>
         </Flex>
         <Box borderLeft="2px solid #fff" h="7%"></Box>
         <Text transform="rotate(270deg)">Seguime</Text>
