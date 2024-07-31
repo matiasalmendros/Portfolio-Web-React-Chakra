@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, useBreakpointValue } from "@chakra-ui/react";
 import ExperienciaCard from "../ExperienciaCard/ExperienciaCard";
 import numero3 from "../../assets/03.png";
 import fto5 from "../../assets/fto 5.png";
@@ -29,8 +29,8 @@ const Experiencia = () => {
         },
         {
             "imageUrl": fto6,
-            "title": "Tema Halcyon",
-            "years": "2019 - Presente",
+            "title": "Tema Unyx",
+            "years": "2013 - 2018",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia fugiat earum autem.",
             "skills": [
                 { "name": "Javascript", percentage: 80 },
@@ -46,8 +46,8 @@ const Experiencia = () => {
         },
         {
             "imageUrl": fto7,
-            "title": "Tema Halcyon",
-            "years": "2019 - Presente",
+            "title": "Tema Marte",
+            "years": "2017 - Presente",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia fugiat earum autem.",
             "skills": [
                 { "name": "Javascript", percentage: 80 },
@@ -65,10 +65,10 @@ const Experiencia = () => {
 
     return (
         <Box as="section" id="experiencia" my="5%" px="10%">
-            <Flex justify="center" mb="5%">
-                <Image src={numero3} alt="Número 3" width="20%" height="auto" mb="-10%"/>
+            <Flex justify="center" mb="5%" display={useBreakpointValue({ base: 'none', sm: 'none', md: 'flex' })}>
+                <Image src={numero3} alt="Número 3" width="20%" height="auto" mb="-10%" />
             </Flex>
-            <Heading as="h1" lineHeight="2em" fontSize="60px" textAlign="center" textShadow="0px 3px 0px rgba(0, 0, 0, 1), 0px 3.5px 0px rgba(255, 255, 255, 1)">
+            <Heading as="h1" lineHeight="2em" fontSize={useBreakpointValue({ base: '20px', sm: '25px', md: '30px', lg: '40px', xl: '50px', xxl: '60px' })} textAlign="center" textShadow="0px 3px 0px rgba(0, 0, 0, 1), 0px 3.5px 0px rgba(255, 255, 255, 1)">
                 Experiencia Profesional
             </Heading>
             {experiencias.map((elemento, index) => (

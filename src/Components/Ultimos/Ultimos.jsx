@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, useBreakpointValue} from "@chakra-ui/react";
 import UltimosCard from "../UltimosCard/UltimosCard";
 import numero4 from '../../assets/04.png';
 import fto8 from '../../assets/fto 8.png';
@@ -87,14 +87,14 @@ const Ultimos = () => {
 
     return (
       <Box as="section" id="ultimos" className="ultimos" textAlign="center" bg="#191923" color="white" m="5% 10% 0 10%">
-        <Image src={numero4} alt="Número 4" m="0 0 -2% 0" width="18%" className="numero4 img"/>
-        <Heading as="h1" m="0" p="0" className="ultimos h1" fontFamily="Libre Franklin" fontSize="60px" textShadow="0px 3px 0px rgba(0, 0, 0, 1), 0px 3.5px 0px rgba(255, 255, 255, 1)">
+        <Image src={numero4} alt="Número 4"  m="0 0 -4% 40%" width="18%" className="numero4 img" display={useBreakpointValue({ sm: 'none', md: 'flex'})}/>
+        <Heading as="h1" m="0" p="0" className="ultimos h1" fontFamily="Libre Franklin" fontSize={useBreakpointValue({base: '20px', sm: '25px', md: '30px', lg: '40px', xl: '50px', xxl: '60px'})} textShadow="0px 3px 0px rgba(0, 0, 0, 1), 0px 3.5px 0px rgba(255, 255, 255, 1)">
           Lo último de los blogs
         </Heading>
         <Heading as="h3" m="4% 0 3% 0" p="0" className="ultimos h3" fontWeight="625" color="#f52a57" fontSize="33px" height="20%">
           Blog
         </Heading>
-        <Flex wrap="wrap" className="ultimostextoimagen" gap="3%" >
+        <Flex wrap="wrap" justifyContent={{ base: "center", md: "space-around" }} alignItems="center" className="ultimostextoimagen" gap="3%" >
           {blogs.slice(0, objetoPivot).map((elemento, index) => (
             <UltimosCard key={index} imgUrl={elemento.imgUrl} code={elemento.code} tittle={elemento.tittle} descripcion={elemento.descripcion} />
           ))}
