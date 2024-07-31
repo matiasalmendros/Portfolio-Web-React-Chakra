@@ -13,12 +13,12 @@ Para ver mi portafolio web, simplemente visita el siguiente enlace: [Portafolio 
 
 ## Capturas de Pantalla
 
-![Vista previa del portafolio](img/header-hero.png)
-![Vista previa del portafolio](img/about.png)
-![Vista previa del portafolio](img/work.png)
-![Vista previa del portafolio](img/experience.png)
-![Vista previa del portafolio](img/last.png)
-![Vista previa del portafolio](img/footer.png)
+![Vista previa del portafolio](src/assets/header-hero.png)
+![Vista previa del portafolio](src/assets/about.png)
+![Vista previa del portafolio](src/assets/work.png)
+![Vista previa del portafolio](src/assets/experience.png)
+![Vista previa del portafolio](src/assets/last.png)
+![Vista previa del portafolio](src/assets/footer.png)
 
 ## Tecnologías Utilizadas
 
